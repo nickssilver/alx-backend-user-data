@@ -4,8 +4,6 @@ In this project, you will learn what the authentication process means and implem
 
 In the industry, you should not implement your own Basic authentication system and use a module or framework that doing it for you (like in `Python-Flask: Flask-HTTPAuth`). Here, for the learning purpose, we will walk through each step of this mechanism to understand it by doing.
 
-
-
 ## Resources
 #### Read or watch:
 
@@ -118,6 +116,10 @@ In a second terminal:
 What the HTTP status code for a request where the user is authenticate but not allowed to access to a resource? 403 of course!
 
 Edit api/v1/app.py:
+
+
+
+# NO Bugs
 
   - Add a new error handler for this status code, the response must be:
     - a JSON: {"error": "Forbidden"}
